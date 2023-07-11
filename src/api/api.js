@@ -1,7 +1,7 @@
 import { NOTION_DATABASE, NOTION_TOKEN } from "@/lib/server-constants";
 
 export const loadNotes = {
-  listTitles: async () => {
+  getlistTitles: async (direction) => {
     const res = await fetch(
       `https://api.notion.com/v1/databases/${NOTION_DATABASE}/query`,
       {
@@ -15,7 +15,7 @@ export const loadNotes = {
           sorts: [
             {
               property: "N",
-              direction: "ascending",
+              direction: direction,
             },
           ],
           filter: {
@@ -33,14 +33,17 @@ export const loadNotes = {
     return repo.results ?? [];
   },
   getNoteById: async (pageId) => {
-    const res = await fetch(`https://api.notion.com/v1/blocks/${pageId}/children`, {
-      method: "GET",
-      headers: {
-        Authorization: `Bearer ${NOTION_TOKEN}`,
-        "Notion-Version": "2022-06-28",
-      },
-    });
+    const res = await fetch(
+      `https://api.notion.com/v1/blocks/${pageId}/children`,
+      {
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${NOTION_TOKEN}`,
+          "Notion-Version": "2022-06-28",
+        },
+      }
+    );
     const repo = await res.json();
-    return repo;
+    return repo.results ?? [];
   },
 };

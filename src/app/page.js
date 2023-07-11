@@ -1,18 +1,15 @@
-import { loadNotes } from "@/api/api";
+import ListPages from "@/components/listPages";
+import ListTitles from "@/components/listTitles";
 
-export default async function Home() {
-  const titles = await loadNotes.listTitles();
-  //const selectedNote = await  loadNotes.getNoteById("4733e1f5-0b3a-4cf7-b105-de96f777fa2f");
-
-  //console.log("titles: ", titles);
-
+export default function Home() {
   return (
-    <main>
-      <ul>
-        {titles.map((title) => (
-          <li key={title.id}>{title.properties.Name.title[0].plain_text}</li>
-        ))}
-      </ul>
+    <main className="flex flex-row h-screen bg-fixed">
+      <div className="w-1/5 h-2/5 self-center p-5 px-12 max-h-screen overflow-y-auto flex flex-col flex-grow">
+        <ListTitles />
+      </div>
+      <div className="w-4/5 h-5/6 m-2 max-h-screen overflow-y-auto flex flex-col flex-grow">
+        <ListPages />
+      </div>
     </main>
   );
 }
