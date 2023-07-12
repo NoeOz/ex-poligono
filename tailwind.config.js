@@ -14,7 +14,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      title: ['"EB Garamond"'],
+      title: ['"Nanum Myeongjo"'],
       para: ['"Work Sans"'],
       number: ['"Playfair Display"']
     },
