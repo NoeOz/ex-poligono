@@ -6,8 +6,8 @@ export default function Fireflies() {
   gsap.registerPlugin(MotionPathPlugin);
   const bottleRef = useRef();
   let total = 80;
-  let w = window.innerWidth;
-  let h = window.innerHeight;
+  let w = 900;
+  let h = 900;
 
   useEffect(() => {
     generateFireflies();
@@ -15,6 +15,11 @@ export default function Fireflies() {
   });
 
   function generateFireflies() {
+    if (typeof window !== "undefined") {
+      w = window?.innerWidth;
+      h = window?.innerHeight;
+    }
+
     for (var i = total; i--; ) {
       var Div = document.createElement("div");
       gsap.set(Div, {
@@ -39,7 +44,7 @@ export default function Fireflies() {
       opacity: R(1),
       scale: R(1) + 0.5,
       delay: R(2),
-      onComplete: () => animate(elm)
+      onComplete: () => animate(elm),
     });
   }
 
@@ -54,5 +59,7 @@ export default function Fireflies() {
     h = window.innerHeight;
   }
 
-  return <div ref={bottleRef} className="flex h-5/6 w-5/6 absolute z-[21]"></div>;
+  return (
+    <div ref={bottleRef} className="flex h-5/6 w-5/6 absolute z-[21]"></div>
+  );
 }
