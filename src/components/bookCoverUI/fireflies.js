@@ -51,13 +51,6 @@ export default function Fireflies() {
     return Math.random() * max;
   }
 
-  window.addEventListener("resize", resize);
-
-  function resize() {
-    w = window.innerWidth;
-    h = window.innerHeight;
-  }
-
   return (
     <div ref={bottleRef} className="flex h-5/6 w-5/6 absolute z-[21]"></div>
   );
