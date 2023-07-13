@@ -34,7 +34,7 @@ export default async function PageNote({ idPage, number }) {
     return Object.values(noteInfo).map(
       (itemNote) =>
         itemNote.type === "heading_1" && (
-          <div key={itemNote.id}>
+          <div className="sticky top-0 bg-slate-50" key={itemNote.id}>
             <p className="font-number text-center text-xl text-slate-900">
               {transformRoman()}
             </p>

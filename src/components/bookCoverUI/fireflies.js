@@ -16,8 +16,10 @@ export default function Fireflies() {
   });
 
   function generateFireflies() {
-    w = bottleRef.current?.innerWidth;
-    h = bottleRef.current?.innerHeight;
+    if (typeof window !== "undefined") {
+      w = window?.innerWidth;
+      h = window?.innerHeight;
+    }
 
     for (var i = total; i--; ) {
       var Div = document.createElement("div");
@@ -49,6 +51,17 @@ export default function Fireflies() {
 
   function R(max) {
     return Math.random() * max;
+  }
+
+  if (typeof window !== "undefined") {
+    window.addEventListener("resize", resize);
+  }
+
+  function resize() {
+    if (typeof window !== "undefined") {
+      w = window?.innerWidth;
+      h = window?.innerHeight;
+    }
   }
 
   return (
