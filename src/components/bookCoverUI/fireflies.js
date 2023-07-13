@@ -3,8 +3,6 @@ import { MotionPathPlugin } from "gsap/all";
 import { useEffect, useRef } from "react";
 
 export default function Fireflies() {
-  const isBrowser = () => typeof window === 'object';
-
   gsap.registerPlugin(MotionPathPlugin);
   const bottleRef = useRef();
   let total = 80;
@@ -17,7 +15,7 @@ export default function Fireflies() {
   });
 
   function generateFireflies() {
-    if (isBrowser()) {
+    if (typeof window === 'object') {
       w = window?.innerWidth;
       h = window?.innerHeight;
     }
