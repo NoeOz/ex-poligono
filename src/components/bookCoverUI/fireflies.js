@@ -3,8 +3,9 @@ import { MotionPathPlugin } from "gsap/all";
 import { useEffect, useRef } from "react";
 
 export default function Fireflies() {
-  gsap.registerPlugin(MotionPathPlugin);
   const bottleRef = useRef();
+  gsap.registerPlugin(MotionPathPlugin);
+
   let total = 80;
   let w = 900;
   let h = 900;
@@ -15,10 +16,8 @@ export default function Fireflies() {
   });
 
   function generateFireflies() {
-    if (typeof window === 'object') {
-      w = window?.innerWidth;
-      h = window?.innerHeight;
-    }
+    w = bottleRef.current?.innerWidth;
+    h = bottleRef.current?.innerHeight;
 
     for (var i = total; i--; ) {
       var Div = document.createElement("div");
