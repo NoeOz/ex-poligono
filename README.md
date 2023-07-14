@@ -1,5 +1,4 @@
-# Proyecto: Ex Poligono
-
+# E X _ P O L I G O N O
 ## A V A N T _ P R O P O S
 
 Este es el inicio de una historia revuelta, este es el inicio de una historia ácida donde no existe principio ni final, donde no se sabe la continuacion, ni de donde es su origen, es tan solo una expresion de mi pensamiento, es tan solo una creacion para disfrutar, para sumergirse; no la considero una novela, ni un cuento, solo un escrito, una expresion sentimental y espiritual de mis sentimientos, mi amor, mi espera, casi eterna.
