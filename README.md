@@ -1,34 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Proyecto: Ex Poligono
 
-## Getting Started
+## A V A N T _ P R O P O S
 
-First, run the development server:
+Este es el inicio de una historia revuelta, este es el inicio de una historia ácida donde no existe principio ni final, donde no se sabe la continuacion, ni de donde es su origen, es tan solo una expresion de mi pensamiento, es tan solo una creacion para disfrutar, para sumergirse; no la considero una novela, ni un cuento, solo un escrito, una expresion sentimental y espiritual de mis sentimientos, mi amor, mi espera, casi eterna.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Donde leer?
+Puedes disfrutar del contenido accediendo desde [aquí](https://ex-poligono.vercel.app)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Características principales
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Este proyecto Está desarrollado con Next.JS x Notion API
+- El contenido de este proyecto ha sido escrito y desarrollado por mi, puede que encuentres errores semánticos y ortográficos, por lo que te pido disculpas querido lector.
+- Agradecería que uses este contenido solo con fines de entretenimiento y no de lucro o plagio.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Código abierto y colaboración
+Este es  un proyecto de código abierto. Si tienes habilidades de desarrollo y deseas colaborar en la mejora de nuestra plataforma, puedes encontrar el código fuente mi repositorio en GitHub. 
+¡Agradezco todas las contribuciones de la comunidad!
 
-## Learn More
+## Contacto
+Si tienes alguna pregunta, sugerencia o simplemente quieres ponerte en contacto conmigo, no dudes en enviarme  un correo electrónico a [ploz2767@gmail.com](mailto:ploz2767@gmail.com)
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+¡Espero que disfrutes de este proyecto! Sumérgete en las historias y déjate llevar por las emociones, la fantasía y las enseñanzas que cada relato tiene para ofrecerte. ¡Feliz lectura!
