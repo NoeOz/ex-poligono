@@ -10,11 +10,7 @@ export default function BookCover({ children }) {
   }, []);
 
   function initialCover() {
-    gsap.fromTo(
-      ".sub",
-      { filter: "blur(15px)" },
-      { filter: "blur(0px)", delay: 0.5 }
-    );
+    gsap.to(".sub", { filter: "blur(0px)", delay: 0.5 });
 
     setTimeout(() => {
       gsap.fromTo(
@@ -38,8 +34,10 @@ export default function BookCover({ children }) {
     <div>
       <div className="cover flex flex-col h-full w-full overflow-hidden absolute z-20 bg-slate-950 justify-center items-center">
         <Fireflies />
-        <p className="sub font-title text-8xl text-slate-50">Ex Poligono</p>
-        <p className="sub font-title mt-8 text-xl text-slate-50 blur-sm">
+        <p className="sub font-title text-4xl sm:text-4xl md:text-6xl lg:text-8xl text-slate-50 blur-sm">
+          Ex Poligono
+        </p>
+        <p className="sub font-title mt-8 text-md sm:text-md md:text-lg lg:text-xl text-slate-50 blur-sm">
           [Entre ... muchos lados]
         </p>
       </div>
